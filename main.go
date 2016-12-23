@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func main() {
+func init() {
 	router := NewRouter()
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
